@@ -10,8 +10,10 @@ info:
   classification:
     cwe-id: CWE-798
   tags: iot,audiocodes,default-login
+  metadata:
+    max-request: 1
 
-requests:
+http:
   - raw:
       - |
         POST /login.cgi HTTP/1.1

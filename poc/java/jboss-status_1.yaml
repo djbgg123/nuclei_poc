@@ -4,10 +4,11 @@ info:
   name: JBoss Management Console Server Information
   author: dhiyaneshDK
   severity: low
-  reference: https://www.exploit-db.com/ghdb/5215
-  tags: jboss,unauth
+  reference:
+    - https://www.exploit-db.com/ghdb/5215
+  tags: jboss,unauth,edb
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/web-console/ServerInfo.jsp"
