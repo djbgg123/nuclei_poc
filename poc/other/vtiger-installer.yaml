@@ -5,12 +5,11 @@ info:
   author: DhiyaneshDk
   severity: high
   metadata:
-    max-request: 1
     verified: true
     shodan-query: html:"Welcome to Vtiger CRM"
   tags: misconfig,vtiger,install,exposure
 
-http:
+requests:
   - method: GET
     path:
       - '{{BaseURL}}/index.php?module=Install&view=Index'

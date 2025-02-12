@@ -5,12 +5,11 @@ info:
   author: ritikchaddha
   severity: high
   metadata:
-    max-request: 1
     verified: true
     shodan-query: http.title:"Bagisto Installer"
   tags: misconfig,bagisto,install,exposure
 
-http:
+requests:
   - method: GET
     path:
       - '{{BaseURL}}/installer'

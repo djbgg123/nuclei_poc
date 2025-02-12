@@ -5,12 +5,11 @@ info:
   author: ritikchaddha
   severity: high
   metadata:
-    max-request: 1
     verified: true
     shodan-query: 'title:"Monstra :: Install"'
   tags: misconfig,monstra,install
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}"

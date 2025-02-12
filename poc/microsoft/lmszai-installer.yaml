@@ -5,12 +5,11 @@ info:
   author: DhiyaneshDk
   severity: high
   metadata:
-    max-request: 1
     verified: true
     shodan-query: html:"LMSZAI - Learning Management System"
   tags: misconfig,blesta,install,exposure
 
-http:
+requests:
   - method: GET
     path:
       - '{{BaseURL}}/install'
