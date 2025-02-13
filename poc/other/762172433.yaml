@@ -17,4 +17,4 @@ tcp:
   - name: chargen
     type: regex
     regex:
-    - NOPQRSTUVWXYZ\[\\\]\^_`abcdefghijklm
+    - ^\*\+,-\./0123456789:;<=>\?@ABCDEFGHIJKLMNOPQRSTUVWXYZ\[\\\]\^_`abcdefghijklmnopq\r\n\+,-\./
